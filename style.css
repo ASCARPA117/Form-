@@ -1,0 +1,155 @@
+:root {
+  --color1: #f0287c;
+  --color2: #f5963d;
+  --text-dark: #1b1b1e;
+  --text-light: #f6f7fc;
+  --background: #e8ebf7;
+  --error: #e61414;
+  --shadow: 240, 40, 120;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'san serif';
+}
+
+#app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #e8ebf7;
+  height: 100vh;
+}
+.registration-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 600px;
+  width: 1024px;
+  box-shadow: 12px 10px 46px -30px rgba(var(--shadow));
+  border-bottom-left-radius: 64px;
+  border-top-right-radius: 64px;
+  overflow: hidden;
+}
+.left {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 64px;
+  background: linear-gradient(var(--color2), var(--color1));
+  width: 410px;
+  border-bottom-left-radius: 64px;
+}
+.left h1 {
+  color: #f6f7fc;
+  font-size: 28px;
+  font-family: 'Arial';
+  align-content: center;
+  text-align: center;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+.left p {
+  color: #f6f7fc;
+  text-align: justify;
+  font-family: 'Arial';
+}
+.right {
+  flex: 1, 5;
+  justify-content: center;
+  border-top-right-radius: 64px;
+  padding: 64px;
+  width: 614px;
+  background-color: #f6f7fc;
+  overflow-y: auto;
+}
+.title {
+  font-family: 'Arial';
+  margin-top: 20px;
+  display: flex;
+}
+.description {
+  font-family: 'Arial';
+  font-size: 17px;
+  margin-top: 8px;
+  margin-bottom: 20px;
+}
+.hello {
+  font-family: 'Arial';
+  text-align: center;
+}
+
+.label {
+  font-family: 'Arial';
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+}
+.input {
+  font-family: 'Arial';
+  justify-content: flex-start;
+  text-align: left;
+  outline: none;
+  border-radius: 20px;
+  border: 1px solid var(--color1);
+  margin-bottom: 12px;
+  width: 100%;
+  padding: 6px;
+  padding-left: 8px;
+  font-size: 15px;
+}
+.button:focus {
+  box-shadow: #f0287c;
+  outline: none; /*mi permette di non colorare al click*/
+  border: 1px solid var(--color1);
+  box-shadow: 0px 0px 10px -2px rgba(var(--shadow));
+}
+.divBox {
+  display: flex;
+}
+.product {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Arial';
+  font-size: 15px;
+}
+.price {
+  font-family: 'Arial';
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  font-size: 15px;
+}
+.checkbox {
+  display: flex;
+  height: 15px;
+  width: 15px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#register-button {
+  color: var(--text-light);
+  font-size: larger;
+  font-family: 'Arial';
+  width: 150px;
+  height: 50px;
+  border-radius: 25px;
+  border: 1px solid var(--color1);
+  margin: 50px;
+  background: linear-gradient(to left, var(--color2), var(--color1));
+}
+#register-button:active {
+  transform: translatey(4px);
+}
